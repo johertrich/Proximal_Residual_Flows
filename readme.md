@@ -30,7 +30,7 @@ Journal of Fourier Analysis and Applications, 26:59, 2020.
 
 [4] J. Hertrich.  
 Proximal Residual Flows for Bayesian Inverse Problems.  
-Arxiv Preprint 2211.17158
+Arxiv Preprint 2211.17158, 2022.
 
 [5] J. Hertrich, S. Neumayer and G. Steidl.  
 Convolutional Proximal Neural Networks and Plug-and-Play Algorithms.  
