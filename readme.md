@@ -7,7 +7,14 @@ https://arxiv.org/abs/2211.17158
 
 The repository contains an implementation of Proximal Residual Flows as introduced in [4]. 
 Proximal Residual Flows are an architecture for normalizing flows based on invertible residual flows [1, 2] and proximal neural networks [3, 5].
-The repository contains the code for reproducing the toy density examples from Section 4.1 and the circle example from Section 4.2 from [4].
+The repository contains the following scripts for reproducing the numerical examples in [4].  
+
+- `toy_examples.py` for the toy density examples from Section 4.1.
+
+- `circle_example.py` for the circle example from Section 4.2.
+
+- `mixture_models.py` for the mixture example from Section 4.2.
+
 More examples will be added soon.
 
 The code is written in python with Tensorflow 2.10.0.

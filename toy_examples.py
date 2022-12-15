@@ -74,16 +74,6 @@ else:
 
 from prox_res_flow import *
 
-def proj_network():
-    for netw in model.subnetworks:
-        for s in netw.stiefel:
-            if s.matrix.shape[0]>s.matrix.shape[1]:
-                orth_s_matrix=proj_orth(s.matrix[None,:,:])
-                s.matrix.assign(tf.squeeze(orth_s_matrix))
-            else:
-                orth_s_matrix=tf.transpose(tf.squeeze(proj_orth(tf.transpose(s.matrix)[None,:,:])))
-                s.matrix.assign(orth_s_matrix)
-    
 def orth_penalty():
     out=0.
     for netw in model.subnetworks:

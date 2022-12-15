@@ -29,9 +29,7 @@ class StiefelDenseLayer(tf.keras.layers.Layer):
     # Implements a Layer of the form A^T sigma(A x+ b) where sigma is an activation function for two-dimensional
     # data points.
     # Inputs:   num_outputs     = number of hidden neurons = dim(Ax)
-    #           soft_thresh     = threshold for the soft shrinkage function
     #           activation      = activation function for the layer. None for soft shrinkage
-    #           transposed_mat  = if false, then the Layer reads as sigma(A x+b)
     def __init__(self,num_outputs,activation):
         super(StiefelDenseLayer, self).__init__()
         self.activation=activation
@@ -68,6 +66,7 @@ class ActNorm(tf.keras.layers.Layer):
         return x
 
 class StiefelNetwork(tf.keras.Model):
+    # Implements a PNN.
     def __init__(self,hidden_dim,n_hidden_layers,activation):
         super(StiefelNetwork,self).__init__()
         self.stiefel=[]
@@ -80,6 +79,7 @@ class StiefelNetwork(tf.keras.Model):
         return x
 
 class ProxResFlow(tf.keras.Model):
+    # Implements a sequence of residual blocks with PNNs.
     def __init__(self,res_blocks,hidden_dim,n_hidden_layers,activation=tf.keras.activations.elu,actnorm=False,reproduce=1,conditional=False,condition_network=None,factor_init=1.,gamma=1.):
         super(ProxResFlow,self).__init__()
         self.res_blocks=res_blocks

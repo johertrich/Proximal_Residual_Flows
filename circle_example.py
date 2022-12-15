@@ -54,7 +54,7 @@ optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3)
 @tf.function
 def train_step(xs,ys):
     with tf.GradientTape() as tape:
-        preds,my_logdet=model(xs,condition=ys,comp_logdet=True,logdet_mode='exact')
+        preds,my_logdet=model(xs,condition=ys,comp_logdet=True)
         logpz=.5*tf.reduce_sum(preds**2)/xs.shape[0]
         logdet=-my_logdet/xs.shape[0]
         orth=orth_penalty()
