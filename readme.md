@@ -3,6 +3,8 @@
 This code belongs to the paper [4]. Please cite the corresponding paper, if you use this code.
 
 The paper is available at  
+https://doi.org/10.1007/978-3-031-31975-4_16  
+An Arxiv preprint is available at
 https://arxiv.org/abs/2211.17158
 
 The repository contains an implementation of Proximal Residual Flows as introduced in [4]. 
@@ -37,7 +39,9 @@ Journal of Fourier Analysis and Applications, 26:59, 2020.
 
 [4] J. Hertrich.  
 Proximal Residual Flows for Bayesian Inverse Problems.  
-Arxiv Preprint 2211.17158, 2022.
+L. Calatroni, M. Donatelli, S. Morigi, M. Prato and M. Santacesaria (eds.)  
+Scale Space and Variational Methods in Computer Vision.  
+Lecture Notes in Computer Science, 14009, 210-222, 2023.  
 
 [5] J. Hertrich, S. Neumayer and G. Steidl.  
 Convolutional Proximal Neural Networks and Plug-and-Play Algorithms.  

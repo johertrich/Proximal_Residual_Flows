@@ -1,8 +1,13 @@
 # This code belongs to the paper
 #
 # J. Hertrich
-# Proximal Residual Flows or Bayesian Inverse Problems
-# Arxiv Preprint 2211.17158
+# Proximal Residual Flows for Bayesian Inverse Problems.
+# L. Calatroni, M. Donatelli, S. Morigi, M. Prato and M. Santacesaria (eds.)
+# Scale Space and Variational Methods in Computer Vision.
+# Lecture Notes in Computer Science, 14009, 210-222, 2023.
+#
+# Paper available at https://doi.org/10.1007/978-3-031-31975-4_16
+# Preprint available at https://arxiv.org/abs/2211.17158
 #
 # Please cite the paper, if you use this code.
 # This script reproduceds the mixture example from Section 4.2 of the paper.

@@ -1,3 +1,15 @@
+# This code belongs to the paper
+#
+# J. Hertrich
+# Proximal Residual Flows for Bayesian Inverse Problems.
+# L. Calatroni, M. Donatelli, S. Morigi, M. Prato and M. Santacesaria (eds.)
+# Scale Space and Variational Methods in Computer Vision.
+# Lecture Notes in Computer Science, 14009, 210-222, 2023.
+#
+# Paper available at https://doi.org/10.1007/978-3-031-31975-4_16
+# Preprint available at https://arxiv.org/abs/2211.17158
+#
+
 import numpy as np
 import tensorflow as tf
 from prox_res_flow import *
