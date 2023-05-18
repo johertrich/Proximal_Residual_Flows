@@ -4,7 +4,7 @@ This code belongs to the paper [4]. Please cite the corresponding paper, if you 
 
 The paper is available at  
 https://doi.org/10.1007/978-3-031-31975-4_16  
-An Arxiv preprint is available at
+An Arxiv preprint is available at  
 https://arxiv.org/abs/2211.17158
 
 The repository contains an implementation of Proximal Residual Flows as introduced in [4]. 
